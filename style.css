@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+body>p {
+    text-align: end;
+    margin: 45px;
+    line-height: 20px;
+    word-spacing: 2px;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px hsl(6, 63%, 50%);
+}
+
+body>p a {
+    color: papayawhip;
+}
+
+.calculator {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
+    margin: auto;
+    margin-top: 10vw;
+}
+
+#container1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.theme {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+
+.changeTheme {
+    display: flex;
+    flex-direction: column;
+}
+
+.nbTheme {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radioBtn {
+    background-color: hsl(223, 31%, 20%);
+    display: flex;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 2.5px 3px;
+    border: none;
+}
+
+.radioBtn input {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.radioBtn input:nth-child(1) {
+    background-color: hsl(6, 63%, 50%);
+}
+
+
+
+#container2 {
+    background-color: hsl(224, 36%, 15%);
+    padding: 25px;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#container2 h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+}
+
+#container3 {
+    background-color: hsl(223, 31%, 20%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#container3 input {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px 0px;
+    width: 110px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4.5px 0px hsl(28, 16%, 65%);
+}
+
+.boxShadow {
+    box-shadow: 0px 0px 0px black;
+}

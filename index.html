@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculator-app-main/images/icon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+    </style>
+    <title>Calculator App</title>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- HAUT DE LA CALCULATRICE-->
+        <div class="container" id="container1">
+            <h1 style="font-size: 1.5rem;">calc</h1>
+            <div class="theme">
+                <h1 style="font-size: 0.8rem;letter-spacing: 1px;font-weight: 500;">THEME</h1>
+                <div class="changeTheme">
+                    <div class="nbTheme">
+                        <label for="theme1">1</label>
+                        <label for="theme2">2</label>
+                        <label for="theme3">3</label>
+                    </div>
+
+                    <div class="radioBtn">
+                        <input type="button" id="theme1" onclick="theme1()">
+                        <input type="button" id="theme2" onclick="theme2()">
+                        <input type="button" id="theme3" onclick="theme3()">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULTAT DU CALCULE -->
+        <div class="container" id="container2">
+            <h1 class="result" id="result"></h1>
+        </div>
+        <!-- BOUTON CALCULATRICE -->
+        <div class="container" id="container3">
+            <input type="button" id="_7" value="7" class="inputBtn" onclick="affichage(7)">
+            <input type="button" id="_8" value="8" class="inputBtn" onclick="affichage(8)">
+            <input type="button" id="_9" value="9" class="inputBtn" onclick="affichage(9)">
+            <input type="button" id="delete" value="DEL" class="inputBtn" onclick="del()"
+                style=" background-color: hsl(225, 21%, 49%); color: hsl(0, 0%, 100%);box-shadow: 0px 4.5px 0px hsl(224, 28%, 35%);">
+            <input type="button" id="_4" value="4" class="inputBtn" onclick="affichage(4)">
+            <input type="button" id="_5" value="5" class="inputBtn" onclick="affichage(5)">
+            <input type="button" id="_6" value="6" class="inputBtn" onclick="affichage(6)">
+            <input type="button" id="plus" value="+" class="inputBtn" onclick="affichage('+')">
+            <input type="button" id="_1" value="1" class="inputBtn" onclick="affichage(1)">
+            <input type="button" id="_2" value="2" class="inputBtn" onclick="affichage(2)">
+            <input type="button" id="_3" value="3" class="inputBtn" onclick="affichage(3)">
+            <input type="button" id="moin" value="-" class="inputBtn" onclick="affichage('-')">
+            <input type="button" id="point" value="." class="inputBtn" onclick="affichage('.')">
+            <input type="button" id="_0" value="0" class="inputBtn" onclick="affichage(0)">
+            <input type="button" id="div" value="/" class="inputBtn" onclick="affichage('/')">
+            <input type="button" id="multi" value="x" class="inputBtn" onclick="affichage('*')">
+            <input type="button" id="reset" value="RESET" class="inputBtn" onclick="reset()"
+                style=" background-color: hsl(225, 21%, 49%); color: hsl(0, 0%, 100%);box-shadow: 0px 4.5px 0px hsl(224, 28%, 35%);">
+            <input type="button" id="egal" value="=" class="inputBtn" onclick="calculate()"
+                style=" background-color: hsl(6, 63%, 50%); color: hsl(0, 0%, 100%);box-shadow: 0px 4.5px 0px hsl(6, 70%, 34%);">
+
+        </div>
+    </div>
+
+    <p><a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29" target="_blank">Frontendmentor.io</a>
+        Challenge
+        By
+        @MehdiKertous, desktop design only <br> the responsive design Soon ...</p>
+
+
+    <script src="app.js" defer>
+
+    </script>
+</body>
+
+</html>
