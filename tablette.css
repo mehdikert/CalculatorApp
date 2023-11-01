@@ -1,0 +1,89 @@
+@media screen and (min-width:501px) and (max-width : 950px) {
+    body {
+        background-color: #3B4664;
+    }
+
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+        gap: 20px;
+    }
+
+    #container1,
+    .theme {
+        display: flex;
+        align-items: center;
+    }
+
+    #container1 {
+        justify-content: space-between;
+        color: white;
+    }
+
+    .theme {
+        gap: 10px;
+    }
+
+    .changeTheme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .radioBtn {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #181F32;
+        padding: 5px 2.5px;
+        border-radius: 50px;
+        border: none;
+        gap: 2px;
+    }
+
+    .radioBtn input {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    #container2 {
+        background-color: #181F32;
+        width: 100%;
+        height: max-content;
+        border-radius: 15px;
+        text-align: end;
+        display: flex;
+        align-items: center;
+        padding: 25px 0px;
+    }
+
+    #container2>h1 {
+        margin-left: 15px;
+        color: white;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+    }
+
+    #container3 {
+        background-color: #181F32;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 35px 0px;
+        border-radius: 15px;
+    }
+
+    .inputBtn {
+        width: 20%;
+        margin: 5px 0px;
+        border: none;
+        padding: 2.5% 0px;
+        border-radius: 10px;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+}

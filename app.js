@@ -99,7 +99,7 @@ function theme2() {
     theme33 = false;
     if (theme22 === true) {
         document.querySelector('body').style.background = 'hsl(0, 0%, 90%)'
-        document.querySelector('#container2').style.background = 'hsl(0, 0%, 93%)'
+        document.querySelector('#container2').style.background = 'rgba(0, 0,0, 0.150)'
         document.querySelector('#container3').style.background = 'hsl(0, 5%, 81%)'
         document.getElementById('theme2').style.backgroundColor = 'hsl(6, 63%, 50%)'
         document.getElementById('container1').style.color = 'hsl(60, 10%, 19%)'
@@ -119,7 +119,7 @@ function theme3() {
     theme11 = false;
     theme22 = false;
     theme33 = true;
-    if (theme33 === true &&  theme11 === false&&
+    if (theme33 === true && theme11 === false &&
         theme22 === false) {
         document.querySelector('body').style.background = 'hsl(268, 75%, 9%)'
         document.querySelector('#container2 ').style.background = 'hsl(268, 71%, 12%)'
@@ -130,7 +130,7 @@ function theme3() {
         document.getElementById('theme1').style.backgroundColor = 'hsl(268, 71%, 12%)'
         document.getElementById('theme2').style.backgroundColor = 'hsl(268, 71%, 12%)'
         document.querySelector('.radioBtn').style.background = 'hsl(268, 71%, 12%)'
-        
+
         for (let i = 0; i < x.length; i++) {
             x.item(i).style.color = 'hsl(52, 100%, 62%)'
             x.item(i).style.backgroundColor = 'hsl(268, 47%, 21%)'
